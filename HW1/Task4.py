@@ -8,8 +8,8 @@
 24 -> 4 16 4
 60 -> 10 40 10
 """
-enter = float(input('Введите кол-во журавликов: '))
+enter = int(input('Введите кол-во журавликов: '))
 ns = enter/6
 np = enter/6
 nk = (ns + np) * 2
-print(ns, nk, np)
+print(f'{enter} -> {ns} {nk} {np}')

@@ -7,4 +7,4 @@ n = int(input('Введите трёхзначное число: '))
 res1 = n//100
 res2 = n//10%10
 res3 = n%10 
-print(res1+res2+res3)
+print(f'{n} -> {res1+res2+res3} ({res1}+{res2}+{res3})')
