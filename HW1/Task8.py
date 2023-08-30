@@ -8,7 +8,7 @@ n = int(input('Введите размер n: '))
 m = int(input('Введите размер m: '))
 k = int(input('Введите кол-во k долек: '))
 
-if n!=m and k>m and k>n and k<m*n:
+if n != m and k < m*n and k % n == 0 or k % m == 0:
     print(f'{n} {m} {k} -> yes')
 else:
     print(f'{n} {m} {k} -> no')
