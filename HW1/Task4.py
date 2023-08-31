@@ -9,7 +9,7 @@
 60 -> 10 40 10
 """
 enter = int(input('Введите кол-во журавликов: '))
-ns = enter/6
-np = enter/6
+ns = enter//6
+np = enter//6
 nk = (ns + np) * 2
 print(f'{enter} -> {ns} {nk} {np}')
