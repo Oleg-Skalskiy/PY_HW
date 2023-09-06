@@ -4,10 +4,15 @@
 
 sum=int(input('Введите сумму чисел S: '))
 prod=int(input('Введите произведение чисел P: '))
-
+x_ans = 0
+y_ans = 0
 for x in range(sum):
     for y in range(prod):
         if sum == x + y and prod == x * y and (x<=1001, y<=1001):
-            print(f'Первое число {x}, а второе число {y}')
-        else:
-            print('Эти числа не соотвествует заданным условиям')
+            x_ans = x
+            y_ans = y
+
+if x_ans == 0 and y_ans == 0:
+    print('Эти числа не соотвествует заданным условиям')
+else:
+    print(f'Первое число {x_ans}, а второе число {y_ans}')
